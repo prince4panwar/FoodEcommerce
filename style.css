@@ -1,0 +1,393 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: rgb(185, 182, 182);
+    scroll-behavior: smooth;
+    
+}
+.padding
+{
+    padding: -100px;
+}
+img
+{
+    cursor: pointer;
+}
+#navbar
+{
+    display:flex;
+    position: relative;
+    background-color:#e1e5e6;
+    align-items: center;
+    /* position: sticky; */
+    /* top: 0px; */
+}
+#logo
+{
+    justify-content: center;
+    margin: 5px 50px;
+    /* padding: 0px 100px; */
+    cursor: pointer;
+}
+#logo img
+{
+    width: 100px;
+    height: 95px;
+    /* border-radius: 400px; */
+}
+#navbar ul
+{
+    display: flex;
+    /* padding: 40px 0px; */
+    margin: 0 10px;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color:black;
+    display: block;
+    font-weight: bold;
+    padding: 5px 23px;
+    
+}
+
+#navbar ul li a:hover
+{
+    text-decoration: none;
+    color:white;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: black;
+}
+#navbar ul li
+{
+    list-style: none;
+    color: red;
+    font-size: 25px;
+    /* text-decoration:none; */
+}
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+#home::before
+{
+    content: "";
+    position: absolute;
+    background: url('Images/home.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home h1
+{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+#home p
+{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 10px 0px;
+}
+.h_primary
+{
+    font-size: 3.8rem;
+    padding:12px;
+
+}
+#btn
+{
+    position: relative;
+    margin: 30px 0px;
+    padding: 7px 10px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border:3px solid white;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+    font-weight:bold;
+}
+#btn:hover{
+    background-color: rgb(124, 2, 2);
+    color: white;
+}
+.marg
+{
+    margin-top: 270px;
+}
+#Services
+{
+    margin: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box
+{
+    text-align: center;
+    border: 3px red solid;
+    margin: 0px 15px;
+    box-shadow: black 2px 2px 50px;
+    border-radius: 10px;
+    background-color: rgb(218, 214, 214);
+
+}
+.box img{
+    margin: 15px 0px;
+    width: 140px;
+    height: 120px;
+}
+.box:hover
+{
+    box-shadow: rgb(10, 10, 10) 10px 10px 20px ;
+}
+
+#our-services
+{
+    margin: 80px 5px;
+    display: flex;
+}
+.ser
+{
+    margin: 5px;
+    border: 3px red solid;
+    display: flex;
+    align-items: center;
+    background-color: rgb(218, 214, 214);
+    box-shadow: black 2px 2px 50px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+.ser:hover
+{
+    box-shadow: rgb(10, 10, 10) 10px 10px 20px ;
+}
+.ser p
+{
+    margin: 0px 20px;
+    font-size: 1.1rem;
+}
+.ser h1
+{
+    text-align: center;
+    color: balck;
+    font-size: 28px;
+}
+.ser img
+{
+    margin: 10px;
+    width: 110px;
+    height: 110px;
+}
+.middle h1
+{
+    
+    margin: 10px 0px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3.5rem;
+}
+.box h1
+{
+    margin: 10px 0px;
+    font-size: 1.9rem;
+}
+.box p
+{
+    font-size: 1.2rem;
+    margin: 5px 10px;
+    text-align: justify;
+}
+#order
+{
+    margin: 0px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.2rem;
+    row-gap: 2rem;
+}
+#order img
+{
+    box-shadow: rgb(10, 10, 10) 5px 5px 10px ;
+    width: 350px;
+    height: 300px;
+    
+}
+#order div img:hover
+{
+    box-shadow: rgb(10, 10, 10) 10px 10px 20px ;
+}
+.clients
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.clients img
+{
+    width: 100px;
+    height: 100px;
+    margin: 0px 40px;
+}
+
+#about
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(172, 230, 86); */
+    height: 300px;
+    margin: 10px 0px;
+}
+#about::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('Images/bg1.jpg') no-repeat center center/cover;
+}
+.aboutheading
+{
+    font-size: 1.8rem;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#about address
+{
+    text-align: justify;
+}
+#about .details
+{
+  margin: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+#contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 500px;
+
+}
+#contact::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('Images/image3.jpg') no-repeat center center/cover;
+}
+#contact input{
+    display: block;
+    margin: 15px 50px;
+    width: 500px;
+    height: 35px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+#contact input:hover{
+box-shadow: 1px 1px 1px grey;
+}
+#contact textarea
+{
+    display: block;
+    margin: 20px 50px;
+    width: 501px;
+    height: 200px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+#contact textarea:hover{
+    box-shadow: 2px 2px 2px grey;
+    }
+#contact #submit
+{
+    display: flex;
+    justify-content: center;
+    /* border: 3px black solid; */
+    cursor: pointer;
+    width: 150px;
+    height: 43px;
+    padding: 3px 10px;
+    font-size: 25px;
+    background-color:transparent;
+    font-weight: bold;
+    border: inset;
+    color: white;
+    margin: auto;
+    
+}
+#contact #submit:hover
+{
+    cursor: pointer;
+    width: 150px;
+    padding: 3px 10px;
+    font-size: 25px;
+   border: outset;
+    font-weight: bold;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+
+}
+footer a
+{
+    display: inline;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover
+{
+    display: inline;
+    color: white;
+    text-decoration:underline
+}
+    footer p
+{
+    display: inline;
+}
